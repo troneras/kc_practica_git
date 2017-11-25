@@ -4,7 +4,7 @@
 ```bash
 git reset --hard HEAD~1
 ```
-Con reset deshacemos el commit, con el modificador --hard además descartamos los cambios en el working copy y utilizamos el puntero HEAD para referirnos de manera indirecta al commit anterior. 
+Con *reset* deshacemos el commit, con el modificador *--hard* además descartamos los cambios en el *working copy* y utilizamos el puntero *HEAD* para referirnos de manera indirecta al *commit* anterior. 
 
 - ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?
 ```bash
@@ -13,16 +13,19 @@ git reflog
 ```bash
 git reset --hard f393469 
 ```
-  Desde la posición actual del HEAD no es posible acceder al commit(porque es hijo del actual) y tampoco desde git log, por lo que debemos buscar en el histórico de acciones para encontrar el commit y realizar un git reset. 
+  Desde la posición actual del *HEAD* no es posible acceder al *commit*(porque es hijo del actual) y tampoco desde *log*, por lo que debemos buscar en el histórico de acciones para encontrar el *commit* y realizar un *git reset*. 
 
 - El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?
-No, porque fue fast-forward
+
+ No, porque fue *fast-forward*
 
 - El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?
-Sí, en éste caso no fue fast forward y el archivo contenía cambios en las mismas líneas. 
+
+ 
+Sí, en éste caso no fue *fast forward* y el archivo contenía cambios en las mismas líneas. 
 
 - El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?
-No, porque es fast-forward. 
+No, porque es *fast-forward*. 
 
 - ¿Qué comando o comandos utilizaste en el paso 25?
 ```bash
@@ -35,7 +38,7 @@ git log --graph --decorate --pretty=oneline
 
 - El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?
 
- Sí, porque la rama master y la rama title forman una lista.
+ Sí, porque la rama *master* y la rama *title* forman una lista.
 
 - ¿Qué comando o comandos utilizaste en el paso 27?
 ```bash
